@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navigation__items {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navigation__items > div {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__item {
+  margin: 0 10px;
+}
+
+.navigation__item.active {
+  background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .navigation__items {
+    width: calc(100% - 64px);
+  }
+}
